@@ -20,7 +20,6 @@ public class MyLinearRegression extends Classifier
 
   @Override
   public void buildClassifier(Instances data) throws Exception {
-    // TODO Auto-generated method stub
     m_NumInstance = data.numInstances();
     m_NumAttribute = data.numAttributes();
     m_Parameter = new double[m_NumAttribute];
@@ -64,7 +63,6 @@ public class MyLinearRegression extends Classifier
       else
         result += m_Parameter[i];
     }
-
     return result;
   }
 
